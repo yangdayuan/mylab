@@ -260,7 +260,7 @@ public partial class softlab_jenkins_report : System.Web.UI.Page
         string result = null;
 
         //bool visible = this.Checkbox1.Checked;
-        bool visible = true;
+        bool visible = false;
 
         IEBrowser browser = new IEBrowser(visible, URL, resultEvent);
 
@@ -271,10 +271,11 @@ public partial class softlab_jenkins_report : System.Web.UI.Page
 
         result = browser.HtmlResult;
 
+        
+
+        if(!visible) browser.Dispose();
+
         return result;
-
-        //if (!visible) browser.Dispose();
-
         ////把获取的html内容通过label显示出来
         //Label2.Text = result;
 

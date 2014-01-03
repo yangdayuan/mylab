@@ -13,7 +13,7 @@
         }
         .style3
         {
-            width: 948px;
+            width: 1100px;
         }
         .style13
         {
@@ -123,7 +123,7 @@
         }
         .style70
         {
-            width: 948px;
+            width: 1100px;
             height: 453px;
         }
         .style71

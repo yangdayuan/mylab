@@ -9,6 +9,8 @@
 
         td,input{ font-size:12px; font-size:12px; font-family:"ËÎÌå";
             background-color: #FFFFFF;
+            text-align: left;
+            margin-top: 0px;
         }
 
 
@@ -37,7 +39,16 @@ a:link,a:visited{ color: #000; text-decoration: none;}
                     </tr>
                     <tr>
                         <td>
-                            &nbsp;</td>
+                            <asp:TextBox ID="TextBox1" runat="server" Height="44px"></asp:TextBox>
+                            <asp:Button ID="Button1" runat="server" Height="43px" Text="Button" 
+                                Width="100px" />
+                            <br />
+                            <br />
+                            <asp:Label ID="stocklist" runat="server" Text="Label"></asp:Label>
+                            <br />
+                            <br />
+                            <asp:Label ID="Debug_Label" runat="server" Text="Label"></asp:Label>
+                        </td>
                         <td>
                             &nbsp;</td>
                     </tr>
@@ -63,7 +74,7 @@ a:link,a:visited{ color: #000; text-decoration: none;}
 	</tr>
 
         <asp:Label ID="Label1" runat="server"></asp:Label>
-
+        <asp:Label ID="Label2" runat="server"></asp:Label>
 
 </table>
     
